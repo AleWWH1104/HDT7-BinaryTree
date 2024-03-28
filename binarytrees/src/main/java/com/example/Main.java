@@ -1,7 +1,9 @@
 package com.example;
-
 import java.util.List;
 
+/**
+ * Clase principal que contiene el método main para ejecutar el programa.
+ */
 public class Main {
     public static void main(String[] args) {
         // Crear un objeto FileManager para leer los archivos
