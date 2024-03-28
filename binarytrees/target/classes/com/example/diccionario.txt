@@ -4,3 +4,4 @@
 (woman, mujer)
 (town, pueblo)
 (yes, si)
+(aloha, hola)
