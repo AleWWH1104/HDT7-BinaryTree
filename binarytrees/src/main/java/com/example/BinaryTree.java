@@ -48,4 +48,19 @@ public class BinaryTree<E extends Comparable<E>> {
         inOrderTraversal(root, result);
         return result;
     }
+
+    public E search(E key) {
+        return searchRec(root, key);
+    }
+
+    private E searchRec(Node<E> root, E key) {
+        if (root == null || root.data.compareTo(key) == 0) {
+            return root != null ? root.data : null;
+        }
+        if (key.compareTo(root.data) < 0) {
+            return searchRec(root.left, key);
+        } else {
+            return searchRec(root.right, key);
+        }
+    }
 }
